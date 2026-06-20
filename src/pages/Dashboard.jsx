@@ -1,27 +1,43 @@
+import Navbar from '../components/Navbar';
+
 function Dashboard() {
 
-    return (
+  return (
+    <>
+      <Navbar />
 
-        <div className="container mt-4">
+      <div className="container mt-4">
 
-            <h1>Dashboard</h1>
+        <h2>Dashboard</h2>
 
-            <hr />
+        <div className="row">
 
-            <div className="card p-4">
-
-                <h3>Revenda de Veículos</h3>
-
-                <p>
-                    Sistema de gerenciamento de veículos.
-                </p>
-
+          <div className="col-md-4">
+            <div className="card p-3">
+              <h4>Total de Veículos</h4>
+              <h2>0</h2>
             </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="card p-3">
+              <h4>Disponíveis</h4>
+              <h2>0</h2>
+            </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="card p-3">
+              <h4>Estoque</h4>
+              <h2>R$ 0</h2>
+            </div>
+          </div>
 
         </div>
 
-    );
-
+      </div>
+    </>
+  );
 }
 
 export default Dashboard;
