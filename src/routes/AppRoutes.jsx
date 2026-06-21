@@ -7,6 +7,7 @@ import Catalogo from '../pages/Catalogo';
 import BuscaMarca from '../pages/BuscaMarca';
 import BuscaCategoria from '../pages/BuscaCategoria';
 import VeiculoDetalhe from '../pages/VeiculoDetalhe';
+import Contato from '../pages/Contato';
 
 function AppRoutes() {
   return (
@@ -47,6 +48,11 @@ function AppRoutes() {
         <Route
           path="/veiculo/:id"
           element={<VeiculoDetalhe />}
+        />
+
+        <Route
+          path="/contato"
+          element={<Contato />}
         />
 
       </Routes>

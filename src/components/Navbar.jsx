@@ -10,7 +10,7 @@ function Navbar() {
           className="navbar-brand"
           to="/"
         >
-          🚗 Revenda Top Cars
+          🏁 Speed Racer
         </Link>
 
         <div className="navbar-nav">
@@ -48,6 +48,13 @@ function Navbar() {
             to="/dashboard"
           >
             Dashboard
+          </Link>
+
+          <Link
+            className="nav-link"
+            to="/contato"
+          >
+            Contato
           </Link>
 
           <Link
