@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Contato() {
   return (
@@ -79,6 +80,9 @@ function Contato() {
         </div>
 
       </div>
+
+      <Footer />
+      
     </>
   );
 }

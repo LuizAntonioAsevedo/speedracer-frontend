@@ -1,11 +1,12 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Login() {
   return (
     <>
       <Navbar />
 
-      <div className="container mt-5">
+      <div className="container mt-5 page-container">
         <div className="row justify-content-center">
           <div className="col-md-4">
             <div className="card p-4">
@@ -53,6 +54,9 @@ function Login() {
           </div>
         </div>
       </div>
+
+      <Footer />
+
     </>
   );
 }

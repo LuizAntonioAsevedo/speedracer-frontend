@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import CarCard from '../components/CarCard';
+import Footer from '../components/Footer';
 
 import corolla from '../assets/carros/corolla.jpeg';
 import civic from '../assets/carros/civic.jpeg';
@@ -74,6 +75,9 @@ const carros = [
         </div>
 
       </div>
+
+      <Footer />
+      
     </>
   );
 }

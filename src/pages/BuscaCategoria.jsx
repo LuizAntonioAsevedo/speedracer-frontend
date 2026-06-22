@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function BuscaCategoria() {
 
@@ -6,7 +7,7 @@ function BuscaCategoria() {
     <>
       <Navbar />
 
-      <div className="container mt-4">
+      <div className="container mt-4 page-container">
 
         <h2>Buscar por Categoria</h2>
 
@@ -20,6 +21,9 @@ function BuscaCategoria() {
         </select>
 
       </div>
+
+      <Footer />
+
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import { useParams } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 import corolla from '../assets/carros/corolla.jpeg';
 import civic from '../assets/carros/civic.jpeg';
@@ -135,6 +136,9 @@ function VeiculoDetalhe() {
         </div>
 
       </div>
+
+      <Footer />
+      
     </>
   );
 }

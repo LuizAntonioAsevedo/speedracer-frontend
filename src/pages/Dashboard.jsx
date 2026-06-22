@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Dashboard() {
 
@@ -6,7 +7,7 @@ function Dashboard() {
     <>
       <Navbar />
 
-      <div className="container mt-4">
+      <div className="container mt-4 page-container">
 
         <h2>Dashboard</h2>
 
@@ -36,6 +37,9 @@ function Dashboard() {
         </div>
 
       </div>
+
+      <Footer />
+
     </>
   );
 }
