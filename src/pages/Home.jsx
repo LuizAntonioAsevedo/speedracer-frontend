@@ -1,5 +1,6 @@
+
 import Navbar from '../components/Navbar';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 
 import bannerHome from '../assets/banners/banner-home.jpeg';
@@ -10,6 +11,9 @@ import compass from '../assets/carros/compass.jpeg';
 import bmw320i from '../assets/carros/bmw320i.jpeg';
 
 function Home() {
+
+  const navigate = useNavigate();
+
   return (
     <>
       <Navbar />
@@ -21,11 +25,11 @@ function Home() {
         <div
           className="rounded d-flex align-items-center text-white"
           style={{
-            backgroundImage: `url(${bannerHome})`,
+            backgroundImage: 'url(' + bannerHome + ')',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             minHeight: '500px'
-          }}
+     }}
         >
           <div className="p-5">
 
@@ -117,9 +121,15 @@ function Home() {
 
           <div className="row">
 
-            <div className="col-md-3 mb-3">
+            <div className="col-md-3 mb-4">
 
-              <div className="card shadow-sm">
+              <div
+                className="card shadow h-100"
+                style={{
+                  cursor: 'pointer'
+                }}
+                onClick={() => navigate('/veiculo/1')}
+              >
 
                 <img
                   src={corolla}
@@ -131,11 +141,21 @@ function Home() {
                   }}
                 />
 
-                <div className="card-body text-center">
+                <div className="card-body">
 
-                  <h5>Toyota Corolla</h5>
+                  <h5 className="card-title">
+                    Toyota Corolla
+                  </h5>
 
-                  <p>R$ 135.000</p>
+                  <p>Ano: 2024</p>
+
+                  <h5 className="text-success">
+                    R$ 135.000
+                  </h5>
+
+                  <button className="btn btn-dark w-100">
+                    Ver Detalhes
+                  </button>
 
                 </div>
 
@@ -143,9 +163,15 @@ function Home() {
 
             </div>
 
-            <div className="col-md-3 mb-3">
+            <div className="col-md-3 mb-4">
 
-              <div className="card shadow-sm">
+              <div
+                className="card shadow h-100"
+                style={{
+                  cursor: 'pointer'
+                }}
+                onClick={() => navigate('/veiculo/2')}
+              >
 
                 <img
                   src={civic}
@@ -157,11 +183,21 @@ function Home() {
                   }}
                 />
 
-                <div className="card-body text-center">
+                <div className="card-body">
 
-                  <h5>Honda Civic</h5>
+                  <h5 className="card-title">
+                    Honda Civic
+                  </h5>
 
-                  <p>R$ 145.000</p>
+                  <p>Ano: 2023</p>
+
+                  <h5 className="text-success">
+                    R$ 145.000
+                  </h5>
+
+                  <button className="btn btn-dark w-100">
+                    Ver Detalhes
+                  </button>
 
                 </div>
 
@@ -169,9 +205,15 @@ function Home() {
 
             </div>
 
-            <div className="col-md-3 mb-3">
+            <div className="col-md-3 mb-4">
 
-              <div className="card shadow-sm">
+              <div
+                className="card shadow h-100"
+                style={{
+                  cursor: 'pointer'
+                }}
+                onClick={() => navigate('/veiculo/3')}
+              >
 
                 <img
                   src={compass}
@@ -183,11 +225,21 @@ function Home() {
                   }}
                 />
 
-                <div className="card-body text-center">
+                <div className="card-body">
 
-                  <h5>Jeep Compass</h5>
+                  <h5 className="card-title">
+                    Jeep Compass
+                  </h5>
 
-                  <p>R$ 180.000</p>
+                  <p>Ano: 2024</p>
+
+                  <h5 className="text-success">
+                    R$ 180.000
+                  </h5>
+
+                  <button className="btn btn-dark w-100">
+                    Ver Detalhes
+                  </button>
 
                 </div>
 
@@ -195,9 +247,15 @@ function Home() {
 
             </div>
 
-            <div className="col-md-3 mb-3">
+            <div className="col-md-3 mb-4">
 
-              <div className="card shadow-sm">
+              <div
+                className="card shadow h-100"
+                style={{
+                  cursor: 'pointer'
+                }}
+                onClick={() => navigate('/veiculo/4')}
+              >
 
                 <img
                   src={bmw320i}
@@ -209,11 +267,21 @@ function Home() {
                   }}
                 />
 
-                <div className="card-body text-center">
+                <div className="card-body">
 
-                  <h5>BMW 320i</h5>
+                  <h5 className="card-title">
+                    BMW 320i
+                  </h5>
 
-                  <p>R$ 295.000</p>
+                  <p>Ano: 2024</p>
+
+                  <h5 className="text-success">
+                    R$ 295.000
+                  </h5>
+
+                  <button className="btn btn-dark w-100">
+                    Ver Detalhes
+                  </button>
 
                 </div>
 
@@ -234,3 +302,4 @@ function Home() {
 }
 
 export default Home;
+

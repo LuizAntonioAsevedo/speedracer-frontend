@@ -6,7 +6,7 @@ function Contato() {
     <>
       <Navbar />
 
-      <div className="container mt-5">
+      <div className="container mt-5 page-container">
 
         <h1>Contato</h1>
 

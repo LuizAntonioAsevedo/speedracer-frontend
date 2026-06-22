@@ -7,7 +7,7 @@ function BuscaCategoria() {
     <>
       <Navbar />
 
-      <div className="container mt-4 page-container">
+      <div className="container mt-5 page-container">
 
         <h2>Buscar por Categoria</h2>
 

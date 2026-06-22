@@ -8,6 +8,7 @@ import BuscaMarca from '../pages/BuscaMarca';
 import BuscaCategoria from '../pages/BuscaCategoria';
 import VeiculoDetalhe from '../pages/VeiculoDetalhe';
 import Contato from '../pages/Contato';
+import Sobre from '../pages/Sobre';
 
 function AppRoutes() {
   return (
@@ -53,6 +54,11 @@ function AppRoutes() {
         <Route
           path="/contato"
           element={<Contato />}
+        />
+
+        <Route
+          path="/sobre"
+          element={<Sobre />}
         />
 
       </Routes>

@@ -64,6 +64,13 @@ function Navbar() {
             Login
           </Link>
 
+          <Link
+            className="nav-link"
+            to="/sobre"
+          >
+            Sobre Nós
+          </Link> 
+
         </div>
 
       </div>
